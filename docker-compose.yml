@@ -12,3 +12,15 @@ services:
       - 3307:3306
     volumes:
       - ./db-dump:/docker-entrypoint-initdb.d
+      
+  jenkins:
+    image: jenkins/jenkins:lts
+    privileged: true
+    user: root
+    ports:
+     - 8080:8080
+     - 50000:50000
+     container_name: jenkins
+     volumes:
+      - /home/$DevOps/jenkins_compose/jenkins_configuration:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock

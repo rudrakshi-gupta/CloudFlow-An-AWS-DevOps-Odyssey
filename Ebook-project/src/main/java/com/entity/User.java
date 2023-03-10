@@ -4,13 +4,14 @@ public class User {
 	
 	private int id;
 	private String name;
+	private String email;
 	private String password;
-	private int phoneno;
+	private String phoneno;
 	private String address;
 	private String Landmark;
 	private String city;
 	private String state;
-	private int zip;
+	private String zip;
 	
 	public User() {
 		super();
@@ -29,16 +30,24 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public String getPassword() {
 		return password;
 	}
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public int getPhoneno() {
+	public String getPhoneno() {
 		return phoneno;
 	}
-	public void setPhoneno(int phoneno) {
+	public void setPhoneno(String phoneno) {
 		this.phoneno = phoneno;
 	}
 	public String getAddress() {
@@ -65,10 +74,10 @@ public class User {
 	public void setState(String state) {
 		this.state = state;
 	}
-	public int getZip() {
+	public String getZip() {
 		return zip;
 	}
-	public void setZip(int zip) {
+	public void setZip(String zip) {
 		this.zip = zip;
 	}
 

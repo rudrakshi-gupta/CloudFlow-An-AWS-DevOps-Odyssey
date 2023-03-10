@@ -1,0 +1,2 @@
+1. Create an apache tomacat server container to run jsp servlet files
+2. Remove dependency from ebook classpath / change it

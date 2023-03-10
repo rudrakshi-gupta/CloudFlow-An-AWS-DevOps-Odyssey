@@ -5,5 +5,5 @@ import com.entity.User;
 public interface UserDAO {
 	public boolean userRegister(User us);
 
-	public boolean login(String email, String password);
+	public User login(String email, String password);
 }

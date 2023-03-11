@@ -1,5 +1,5 @@
 <div class="container-fluid" style="height: 10px; background-color: #303f9f"></div>
-<div class="container-fluid p-3 bg-Light">
+<div class="container-fluid p-3 bg-light">
     <div class="row">
         <div class="col-md-3 text-success"></div>
         <h3>

@@ -2,6 +2,7 @@ package com.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 import com.entity.User;
 
@@ -50,13 +51,13 @@ public class UserDAOImpl implements UserDAO {
                us.setId(rs.getInt (1));
                us.setName (rs.getString(2));
                us.setEmail (rs.getString(3));
-               us.setPhno (rs.getString(4));
+               us.setPhoneno (rs.getString(4));
                us.setPassword (rs.getString(5));
                us.setAddress (rs.getString(6));
                us.setLandmark (rs.getString(7));
                us.setCity (rs.getString(8));
                us.setState(rs.getString(9));
-               us.setPincode(rs.getString(10));
+               us.setZip(rs.getString(10));
             }
 	    } catch (Exception e) {
             e.printStackTrace();

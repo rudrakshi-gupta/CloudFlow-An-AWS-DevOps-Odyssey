@@ -7,23 +7,37 @@
             <meta charset="UTF-8">
             <title>Admin: Home</title>
             <%@ include file="allCss.jsp" %>
+                <style type="text/css">
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    a:hover {
+                        text-decoration: none;
+                        color: black;
+                    }
+                </style>
         </head>
 
         <body>
             <%@ include file="navbar.jsp" %>
-                <div class="container"> 
+                <div class="container">
                     <div class="row p-5">
                         <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-plus-square fa-3x text-primary"></i><br>
-                                    <h4>Add Books</h4>
-                                    ------------------
+                            <a href="add_books.jsp">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-plus-square fa-3x text-primary"></i><br>
+                                        <h4>Add Books</h4>
+                                        ------------------
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="col-md-3">
+                            <a href = "all_books.jsp">
                             <div class="card">
                                 <div class="card-body text-center">
                                     <i class="fas fa-book-open fa-3x text-danger"></i><br>
@@ -31,10 +45,12 @@
                                     ------------------
                                 </div>
                             </div>
+                        </a>
                         </div>
 
 
                         <div class="col-md-3">
+                            <a href = "orders.jsp">
                             <div class="card">
                                 <div class="card-body text-center">
                                     <i class="fas fa-box-open fa-3x text-warning"></i><br>
@@ -42,6 +58,7 @@
                                     ------------------
                                 </div>
                             </div>
+                        </a>
                         </div>
 
 
@@ -51,13 +68,15 @@
                                     <i class="fas fa-sign-out-alt fa-3x text-primary"></i><br>
                                     <h4>Logout</h4>
                                     ------------------
-                                    
+
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-        </body>
+                <div style = "margin-top: 130px;" >
+                <%@include file="footer.jsp"%></div>
 
+        </body>
         </html>

@@ -25,7 +25,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
     <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"></li><a class="nav-Link" href="#"></a>Home
+        <li class="nav-item active"></li><a class="nav-Link" href="home.jsp"></a>Home
         <span class="sr-only">(current)</span>
         </a></li>
        

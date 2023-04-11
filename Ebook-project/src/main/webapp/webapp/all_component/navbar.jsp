@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-3 text-success"></div>
         <h3>
-            <i class="fas fa-book"></i> Ebooks
+            <i class="fas fa-book"></i> EBooks
         </h3>
     </div>
     <div class="col-md-6"></div>
@@ -13,7 +13,8 @@
     </form>
 </div>
 <div class="col-md-3">
-    <a href="" class="btn btn-success">Login</a><a herf="" class="btn btn-primary text-white"></a>Register</a>
+    <a href="Login.jsp" class="btn btn-success" ><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+    <a href="register.jsp" class="btn btn-primary text-white"><i class="fa-solid fa-user-plus"></i>Register</a>
 </div>
 </div>
 </div>

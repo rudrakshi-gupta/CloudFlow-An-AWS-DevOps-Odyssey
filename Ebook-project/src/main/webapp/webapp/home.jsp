@@ -6,6 +6,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Admin:Home</h1>
+<h1>User:Home</h1>
+  			<c:if test="${not empty userobj}">
+				<h1>Name:${userobj.name}</h1>
+			</c:if>
 </body>
 </html>

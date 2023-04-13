@@ -1,10 +1,10 @@
 package com.entity;
 
 public class User {
-	
+
 	private int id;
 	private String name;
-	private String email;
+	private String Email;
 	private String password;
 	private String phoneno;
 	private String address;
@@ -12,12 +12,12 @@ public class User {
 	private String city;
 	private String state;
 	private String zip;
-	
+
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public int getId() {
 		return id;
 	}
@@ -32,12 +32,11 @@ public class User {
 	}
 	
 	public String getEmail() {
-		return email;
+		return Email;
 	}
 	public void setEmail(String email) {
-		this.email = email;
+		Email = email;
 	}
-
 	public String getPassword() {
 		return password;
 	}
@@ -86,5 +85,5 @@ public class User {
 		return "User [id=" + id + ", name=" + name + ", password=" + password + ", phoneno=" + phoneno + ", address="
 				+ address + ", Landmark=" + Landmark + ", city=" + city + ", state=" + state + ", zip=" + zip + "]";
 	}
-	
+
 }

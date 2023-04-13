@@ -4,20 +4,20 @@ import java.io.File;
 import java.io.IOException;
 
 import com.DAO.BookDAOImpl;
-import com.DB.BookDtls;
-import com.DB.DBconnect;
+import com.DB.DBConnect;
+import com.entity.BookDtls;
 
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
-import jakarta.servlet.http.Part;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.servlet.http.Part;
 
 
 @WebServlet("/add_books")
-public class BooksAdd extends HttpServlet{
+public class BooksAdd extends javax.servlet.http.HttpServlet{
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -33,7 +33,7 @@ public class BooksAdd extends HttpServlet{
 			
 			BookDtls b = new BookDtls();
 			
-			BookDAOImpl dao = new BookDAOImpl(DBconnect.getConn());
+			BookDAOImpl dao = new BookDAOImpl(DBConnect.getConn());
 
 			
 			boolean f = dao.addBooks(b);

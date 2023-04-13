@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   DB:
-    container_name: db
+    container_name: DB
     image: mysql:latest
     build: ./db-dump/.
     command: --default-authentication-plugin=mysql_native_password
@@ -25,6 +25,6 @@ services:
   #     - /home/$DevOps/jenkins_compose/jenkins_configuration:/var/jenkins_home
   #     - /var/run/docker.sock:/var/run/docker.sock
 
-  ebook:
-    container_name: ebookApp
-    build: ./Ebook-project/.
+  # ebook:
+  #   container_name: ebookApp
+  #   build: ./Ebook-project/.

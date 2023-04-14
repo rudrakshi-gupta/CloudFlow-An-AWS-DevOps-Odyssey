@@ -40,7 +40,7 @@
         <div class="col-md-3">
             <div class="card crd-ho">
                 <div class="card-body text-center">
-                    <img alt="" src="img/book/java.jpeg" style="width: 150px; height: 200px"
+                    <img alt="" src="book/java.jpeg" style="width: 150px; height: 200px"
                         class="img-thumblin">
                     <p>Java Programming</p>
                     <p>Balguruswamy</p>
@@ -57,7 +57,7 @@
         <div class="col-md-3">
             <div class="card crd-ho">
                 <div class="card-body text-center">
-                    <img alt="" src="book/java.jpg" style="width: 150px; height: 200px"
+                    <img alt="" src="book/java.jpeg" style="width: 150px; height: 200px"
                         class="img-thumblin">
                     <p>Java Programming</p>
                     <p>Balguruswamy</p>

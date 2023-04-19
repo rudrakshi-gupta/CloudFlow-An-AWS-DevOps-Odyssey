@@ -15,6 +15,7 @@
                 <table class="table table-striped">
                     <thead class="bg-primary text-white">
                         <tr>
+                            <th scope="col">ID</th>
                             <th scope="col">Image</th>
                             <th scope="col">Book Name</th>
                             <th scope="col">Author</th>
@@ -26,45 +27,30 @@
                         </tr>
                     </thead>
                     <tbody>
+
+                    <%
+                    BookDAOImpl dao=new BookDAOImpl(DBConnect.getConn());
+                    List<BookDtls> list=dao.getAllBooks();
+                    for(BookDtls b : list){
+                        %>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td><%=b.getBookId()%></td>
+                            <td><img src="../book/<%=b.getPhotoName()%>"
+                                style="width: 50px; height: 50 px"></td>
+                            <td><%=b.getBookName()%></td>
+                            <td><%b.getAuthor()%></td>
+                            <td><%b.getPrice()%></td>
+                            <td><%b.getBookCategory()%></td>
+                            <td><%b.getStatus%></td>
                             <td>
                                 <a href="#" class="btn btn-sm btn-primary">Edit</a>
                                 <a href="#" class="btn btn-sm btn-danger">Delete</a>
 
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>
-                                <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="#" class="btn btn-sm btn-danger">Delete</a>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>
-                                <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="#" class="btn btn-sm btn-danger">Delete</a>
-
-                            </td>
-                        </tr>
+                        <%
+                    }
+                    %>
                     </tbody>
                 </table>
                 <div style = "margin-top: 130px;" >

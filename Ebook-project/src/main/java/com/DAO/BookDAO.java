@@ -6,5 +6,5 @@ public interface BookDAO {
 	public boolean addBooks(BookDtls b);
 	
 	
-	public BookDtls getAllBooks();
+	public List<BookDtls> getAllBooks();
 }

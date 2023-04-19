@@ -15,7 +15,7 @@
                 <table class="table table-striped">
                     <thead class="bg-primary text-white">
                         <tr>
-                            <th scope="col">Id</th>
+                            <th scope="col">Image</th>
                             <th scope="col">Book Name</th>
                             <th scope="col">Author</th>
                             <th scope="col">Price</th>

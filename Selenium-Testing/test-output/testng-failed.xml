@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SeleniumTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="RegisterTesting(failed)">
+    <classes>
+      <class name="EbookTest.RegisterTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="setUpDriver"/>
+          <include name="searchTest"/>
+        </methods>
+      </class> <!-- EbookTest.RegisterTest -->
+    </classes>
+  </test> <!-- RegisterTesting(failed) -->
+</suite> <!-- Failed suite [SeleniumTests] -->

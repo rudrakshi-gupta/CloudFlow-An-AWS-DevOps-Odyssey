@@ -28,18 +28,17 @@ public class loginServlet extends HttpServlet {
 
 
             String email=req.getParameter("email");
-            String password=req.getParameter("password");
+            String password=req.getParameter("pwd");
             
             System.out.println(email+" "+password);
 
 
-            if ("admin@gmail.com".equals(email) && "admin".equals(password)) {
+            if (email.equals("admin@gmail.com") & password.equals("admin")) {
                 User us =  new User();
                 session.setAttribute("userobj", us);
                 resp. sendRedirect("admin/home.jsp");
-            } else {
-
-
+            } 
+            else {
                 User us=dao.login (email, password);
                 if(us!=null){
                   session.setAttribute("userobj", us);
@@ -51,7 +50,8 @@ public class loginServlet extends HttpServlet {
                 }
               resp.sendRedirect ("home.jsp");
             }
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             e.printStackTrace();
         }
     }

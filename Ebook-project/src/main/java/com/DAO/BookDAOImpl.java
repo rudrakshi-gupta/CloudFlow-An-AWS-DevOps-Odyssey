@@ -2,6 +2,9 @@ package com.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.entity.BookDtls;
 
@@ -57,13 +60,13 @@ public class BookDAOImpl implements BookDAO{
 			ResultSet rs=ps.executeQuery();
 			while(rs.next()){
 				b=new BookDtls();
-				b.setBookTD(rs.getInt(1));
+				b.setBookId(rs.getInt(1));
 				b.setBookName(rs.getString(2));
 				b.setAuthor(rs.getString(3));
 				b.setPrice(rs.getString(4));
 				b.setBookCategory(rs.getString(5));
 				b.setStatus(rs.getString(6));
-				b.setPhotoName(rs.getString(7));
+				b.setPhotoname(rs.getString(7));
 				b.setEmail(rs.getString(8));
 				list.add(b);
 
@@ -72,14 +75,13 @@ public class BookDAOImpl implements BookDAO{
 			e.printStackTrace();
 
 		}
-
 		return null;
 
 	}
-	
 
-	
-	
-	
-	
+	@Override
+	public List<BookDtls> getAllBooks() {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'getAllBooks'");
+	}
 }

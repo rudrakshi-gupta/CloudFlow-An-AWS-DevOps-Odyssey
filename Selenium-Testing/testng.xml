@@ -7,4 +7,14 @@
             <class name="EbookTest.RegisterTest" />
         </classes>
     </test>
+    <test name="LoginAdminTesting">
+        <classes>
+            <class name="EbookTest.LoginAdminTest" />
+        </classes>
+    </test>
+    <test name="LoginUserTesting">
+        <classes>
+            <class name="EbookTest.LoginUserTest" />
+        </classes>
+    </test>
 </suite>

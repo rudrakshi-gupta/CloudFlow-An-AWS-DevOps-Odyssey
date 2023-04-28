@@ -3,19 +3,16 @@ package EbookTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import PageObjects.RegisterPage;
+import PageObjects.LoginPage;
 
-public class RegisterTest extends BaseTest{
+public class LoginUserTest extends BaseTest{
 	@Test
 	public void searchTest() {
-		RegisterPage c = new RegisterPage(driver);
+		LoginPage c = new LoginPage(driver);
 		c.launchURL();
 		c.isDisplayed();
-		c.NameText("Fiona");
 		c.EmailText("fiona@reddifmail.com");
-		c.PhnoText("3849823423");
 		c.PwdText("iamFiona");
-		c.Checkbox();
 		c.Sub();
 		
 		try {

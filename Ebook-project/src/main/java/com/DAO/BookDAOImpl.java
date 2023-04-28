@@ -48,7 +48,7 @@ public class BookDAOImpl implements BookDAO{
 		return false;
 	}
 
-	public List<BookDtls> getAllBooks{
+	public List<BookDtls> getAllBooks(){
         
 	    List<BookDtls> list = new ArrayList<BookDtls>();
 		BookDtls b=null;

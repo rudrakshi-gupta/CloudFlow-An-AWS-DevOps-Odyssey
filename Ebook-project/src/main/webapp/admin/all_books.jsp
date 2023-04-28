@@ -41,7 +41,7 @@
                             <td><%b.getAuthor()%></td>
                             <td><%b.getPrice()%></td>
                             <td><%b.getBookCategory()%></td>
-                            <td><%b.getStatus%></td>
+                            <td><%b.getStatus()%></td>
                             <td>
                                 <a href="edit_books.jsp" class="btn btn-sm btn-primary">Edit</a>
                                 <a href="#" class="btn btn-sm btn-danger">Delete</a>

@@ -17,6 +17,11 @@
             <class name="EbookTest.LoginUserTest" />
         </classes>
     </test>
+    <test name="UserTesting">
+        <classes>
+            <class name="EbookTest.UserResultTest" />
+        </classes>
+    </test>
     <test name="LoginAdminTesting">
         <classes>
             <class name="EbookTest.LoginAdminTest" />

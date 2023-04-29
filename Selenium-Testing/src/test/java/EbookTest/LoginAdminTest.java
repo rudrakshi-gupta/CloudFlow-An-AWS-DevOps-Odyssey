@@ -7,7 +7,7 @@ import PageObjects.LoginPage;
 
 public class LoginAdminTest extends BaseTest{
 	@Test
-	public void searchTest() {
+	public void adminlogTest() {
 		LoginPage c = new LoginPage(driver);
 		c.launchURL();
 		c.isDisplayed();

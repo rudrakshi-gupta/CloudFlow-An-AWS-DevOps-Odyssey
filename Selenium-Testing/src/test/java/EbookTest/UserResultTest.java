@@ -4,19 +4,23 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import PageObjects.LoginPage;
+import PageObjects.LoginUserResultPage;
 
-public class LoginUserTest extends BaseTest{
+public class UserResultTest extends BaseTest{
 	@Test
-	public void loginTest() {
+	public void userTest() {
 		LoginPage c = new LoginPage(driver);
+		LoginUserResultPage resultpage = new LoginUserResultPage(driver);
 		c.launchURL();
 		c.isDisplayed();
 		c.EmailText("fiona@reddifmail.com");
 		c.PwdText("iamFiona");
 		c.Sub();
+		resultpage.isDisplayed();
+		resultpage.pay();
 		
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		}
 		catch(InterruptedException e) {
 			System.err.println(e.getMessage());

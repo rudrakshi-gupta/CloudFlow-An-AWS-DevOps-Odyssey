@@ -7,7 +7,7 @@ import PageObjects.RegisterPage;
 
 public class RegisterTest extends BaseTest{
 	@Test
-	public void searchTest() {
+	public void registerTest() {
 		RegisterPage c = new RegisterPage(driver);
 		c.launchURL();
 		c.isDisplayed();

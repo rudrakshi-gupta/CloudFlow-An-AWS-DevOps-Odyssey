@@ -7,7 +7,7 @@ import PageObjects.HomePage;
 
 public class HomeTest extends BaseTest{
 	@Test
-	public void searchTest() {
+	public void homeTest() {
 		HomePage c = new HomePage(driver);
 		c.launchURL();
 		c.isDisplayed();

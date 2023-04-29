@@ -17,21 +17,22 @@ public class HomePage {
 		this.wait = new WebDriverWait(driver,3000L);
 		PageFactory.initElements(driver,this);
 	}
-	public void searchText(String Searchkey) {
-		this.searcBox.sendKeys(Searchkey);
+	public void DetailText() {
+		this.DetailBox.click();
 	}
-	@FindBy(id = "searching")
-	private WebElement searcBox;
+	@FindBy(className = "dtl")
+	private WebElement DetailBox;
 	
 	public void launchURL() {
-		String ip = "172.22.0.2" ;
-		if(System.getProperty("IP") !=null) {
-			ip = System.getProperty("IP");
-		}
-		this.driver.get("http://"+ip+":3000");
+//		String ip = "172.22.0.2" ;
+//		if(System.getProperty("IP") !=null) {
+//			ip = System.getProperty("IP");
+//		}
+//		this.driver.get("http://"+ip+":3000");
+		this.driver.get("http://localhost:8080/Ebook-project/");
 	}
 	public boolean isDisplayed() {
-		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(searcBox));
+		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(DetailBox));
 		return true;
 	}
 }

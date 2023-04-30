@@ -2,9 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="SeleniumTests" verbose="1">
-	<test name="HomeTesting">
+	<test name="HomeDTesting">
         <classes>
-            <class name="EbookTest.HomeTest" />
+            <class name="EbookTest.HomeDetailTest" />
+        </classes>
+    </test>
+    <test name="HomeCTesting">
+        <classes>
+            <class name="EbookTest.HomeCartTest" />
         </classes>
     </test>
     <test name="RegisterTesting">
@@ -17,14 +22,14 @@
             <class name="EbookTest.LoginUserTest" />
         </classes>
     </test>
-    <test name="UserTesting">
-        <classes>
-            <class name="EbookTest.UserResultTest" />
-        </classes>
-    </test>
     <test name="LoginAdminTesting">
         <classes>
             <class name="EbookTest.LoginAdminTest" />
+        </classes>
+    </test>
+    <test name="OrderDtlTesting">
+        <classes>
+            <class name="EbookTest.AdminOrdersDetailTest" />
         </classes>
     </test>
 </suite>

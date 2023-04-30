@@ -1,25 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-29T10:21:34 IST" name="SeleniumTests" finished-at="2023-04-29T10:21:40 IST" duration-ms="6412">
+  <suite started-at="2023-04-30T16:29:18 IST" name="SeleniumTests" finished-at="2023-04-30T16:29:50 IST" duration-ms="31722">
     <groups>
     </groups>
-    <test started-at="2023-04-29T10:21:34 IST" name="HomeTesting" finished-at="2023-04-29T10:21:40 IST" duration-ms="6412">
-      <class name="EbookTest.HomeTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.HomeTest@8dbdac1]" started-at="2023-04-29T10:21:34 IST" name="setUpDriver" finished-at="2023-04-29T10:21:36 IST" duration-ms="2057" status="PASS">
+    <test started-at="2023-04-30T16:29:18 IST" name="HomeDTesting" finished-at="2023-04-30T16:29:24 IST" duration-ms="6354">
+      <class name="EbookTest.HomeDetailTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.HomeDetailTest@8dbdac1]" started-at="2023-04-30T16:29:18 IST" name="setUpDriver" finished-at="2023-04-30T16:29:20 IST" duration-ms="2050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="searchTest()[pri:0, instance:EbookTest.HomeTest@8dbdac1]" started-at="2023-04-29T10:21:36 IST" name="searchTest" finished-at="2023-04-29T10:21:40 IST" duration-ms="4142" status="PASS">
+        <test-method signature="homeTest()[pri:0, instance:EbookTest.HomeDetailTest@8dbdac1]" started-at="2023-04-30T16:29:20 IST" name="homeTest" finished-at="2023-04-30T16:29:24 IST" duration-ms="4138" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.HomeTest@8dbdac1]" started-at="2023-04-29T10:21:40 IST" name="quitDriver" finished-at="2023-04-29T10:21:40 IST" duration-ms="166" status="PASS">
+        </test-method> <!-- homeTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.HomeDetailTest@8dbdac1]" started-at="2023-04-30T16:29:24 IST" name="quitDriver" finished-at="2023-04-30T16:29:24 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- EbookTest.HomeTest -->
-    </test> <!-- HomeTesting -->
+      </class> <!-- EbookTest.HomeDetailTest -->
+    </test> <!-- HomeDTesting -->
+    <test started-at="2023-04-30T16:29:24 IST" name="HomeCTesting" finished-at="2023-04-30T16:29:30 IST" duration-ms="5982">
+      <class name="EbookTest.HomeCartTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.HomeCartTest@3febb011]" started-at="2023-04-30T16:29:24 IST" name="setUpDriver" finished-at="2023-04-30T16:29:26 IST" duration-ms="1427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="userTest()[pri:0, instance:EbookTest.HomeCartTest@3febb011]" started-at="2023-04-30T16:29:26 IST" name="userTest" finished-at="2023-04-30T16:29:30 IST" duration-ms="4431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.HomeCartTest@3febb011]" started-at="2023-04-30T16:29:30 IST" name="quitDriver" finished-at="2023-04-30T16:29:30 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- EbookTest.HomeCartTest -->
+    </test> <!-- HomeCTesting -->
+    <test started-at="2023-04-30T16:29:30 IST" name="RegisterTesting" finished-at="2023-04-30T16:29:36 IST" duration-ms="6114">
+      <class name="EbookTest.RegisterTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.RegisterTest@7f3b84b8]" started-at="2023-04-30T16:29:30 IST" name="setUpDriver" finished-at="2023-04-30T16:29:32 IST" duration-ms="1490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="registerTest()[pri:0, instance:EbookTest.RegisterTest@7f3b84b8]" started-at="2023-04-30T16:29:32 IST" name="registerTest" finished-at="2023-04-30T16:29:36 IST" duration-ms="4495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.RegisterTest@7f3b84b8]" started-at="2023-04-30T16:29:36 IST" name="quitDriver" finished-at="2023-04-30T16:29:36 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- EbookTest.RegisterTest -->
+    </test> <!-- RegisterTesting -->
+    <test started-at="2023-04-30T16:29:36 IST" name="LoginUserTesting" finished-at="2023-04-30T16:29:43 IST" duration-ms="6883">
+      <class name="EbookTest.LoginUserTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.LoginUserTest@6adbc9d]" started-at="2023-04-30T16:29:36 IST" name="setUpDriver" finished-at="2023-04-30T16:29:38 IST" duration-ms="1402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="loginTest()[pri:0, instance:EbookTest.LoginUserTest@6adbc9d]" started-at="2023-04-30T16:29:38 IST" name="loginTest" finished-at="2023-04-30T16:29:43 IST" duration-ms="5367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.LoginUserTest@6adbc9d]" started-at="2023-04-30T16:29:43 IST" name="quitDriver" finished-at="2023-04-30T16:29:43 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- EbookTest.LoginUserTest -->
+    </test> <!-- LoginUserTesting -->
+    <test started-at="2023-04-30T16:29:43 IST" name="LoginAdminTesting" finished-at="2023-04-30T16:29:50 IST" duration-ms="6334">
+      <class name="EbookTest.LoginAdminTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.LoginAdminTest@4efbca5a]" started-at="2023-04-30T16:29:43 IST" name="setUpDriver" finished-at="2023-04-30T16:29:45 IST" duration-ms="1441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="adminlogTest()[pri:0, instance:EbookTest.LoginAdminTest@4efbca5a]" started-at="2023-04-30T16:29:45 IST" name="adminlogTest" finished-at="2023-04-30T16:29:49 IST" duration-ms="4752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminlogTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.LoginAdminTest@4efbca5a]" started-at="2023-04-30T16:29:49 IST" name="quitDriver" finished-at="2023-04-30T16:29:50 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- EbookTest.LoginAdminTest -->
+    </test> <!-- LoginAdminTesting -->
   </suite> <!-- SeleniumTests -->
 </testng-results>

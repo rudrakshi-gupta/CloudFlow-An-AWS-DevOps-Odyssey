@@ -3,20 +3,18 @@ package EbookTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import PageObjects.LoginPage;
+import PageObjects.AdminPage;
 
-public class LoginUserTest extends BaseTest{
+public class AdminOrdersDetail extends BaseTest{
 	@Test
-	public void loginTest() {
-		LoginPage c = new LoginPage(driver);
+	public void userTest() {
+		AdminPage c = new AdminPage(driver);
 		c.launchURL();
 		c.isDisplayed();
-		c.EmailText("fiona@reddifmail.com");
-		c.PwdText("iamFiona");
-		c.Sub();
+		c.Orders();
 		
 		try {
-			Thread.sleep(4000);
+			Thread.sleep(3000);
 		}
 		catch(InterruptedException e) {
 			System.err.println(e.getMessage());

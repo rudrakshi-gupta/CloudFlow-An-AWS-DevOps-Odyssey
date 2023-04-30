@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 
 import PageObjects.HomePage;
 
-public class HomeTest extends BaseTest{
+public class HomeCartTest extends BaseTest{
 	@Test
-	public void homeTest() {
+	public void cartTest() {
 		HomePage c = new HomePage(driver);
 		c.launchURL();
 		c.isDisplayed();
-		c.DetailText();
+		c.pay();
 		
 		try {
 			Thread.sleep(3000);

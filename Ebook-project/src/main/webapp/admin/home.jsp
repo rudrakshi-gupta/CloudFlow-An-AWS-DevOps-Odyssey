@@ -28,7 +28,7 @@ a:hover {
 	<div class="container">
 		<div class="row p-5">
 			<div class="col-md-3">
-				<a href="add_books.jsp">
+				<a href="add_books.jsp" name="add">
 					<div class="card">
 						<div class="card-body text-center">
 							<i class="fas fa-plus-square fa-3x text-primary"></i><br>
@@ -41,7 +41,7 @@ a:hover {
 
 
 			<div class="col-md-3">
-				<a href="all_books.jsp">
+				<a href="all_books.jsp" name="all">
 					<div class="card">
 						<div class="card-body text-center">
 							<i class="fas fa-book-open fa-3x text-danger"></i><br>
@@ -56,7 +56,7 @@ a:hover {
 
 
 			<div class="col-md-3">
-				<a href="orders.jsp">
+				<a href="orders.jsp" name="order">
 					<div class="card">
 						<div class="card-body text-center">
 							<i class="fas fa-box-open fa-3x text-warning"></i><br>

@@ -23,6 +23,12 @@ public class HomePage {
 	@FindBy(className = "dtl")
 	private WebElement DetailBox;
 	
+	public void pay() {
+		this.Cart.click();
+	}
+	@FindBy(name = "cart")
+	private WebElement Cart;
+	
 	public void launchURL() {
 //		String ip = "172.22.0.2" ;
 //		if(System.getProperty("IP") !=null) {
@@ -33,6 +39,7 @@ public class HomePage {
 	}
 	public boolean isDisplayed() {
 		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(DetailBox));
+		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(Cart));
 		return true;
 	}
 }

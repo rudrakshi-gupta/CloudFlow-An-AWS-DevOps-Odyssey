@@ -46,8 +46,8 @@
                     <p>Balguruswamy</p>
                     <p>Categories:New</p>
                     <div class="row">
-                        <a href="" class="btn btn-danger btn-sm ml-2">Add Cart</a>
-                        <a href="" class="btn btn-success btn-sm mL-1">View Details</a>
+                        <a href="" class="btn btn-danger btn-sm ml-2" name="cart">Add Cart</a>
+                        <a href="" class="btn btn-success btn-sm mL-1 dtl">View Details</a>
                         <a href="" class="btn btn-danger btn-sm ml-1">299</a>
                     </div>
                 </div>

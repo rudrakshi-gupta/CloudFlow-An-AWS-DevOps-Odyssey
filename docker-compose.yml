@@ -25,8 +25,8 @@ services:
   #     - /home/$DevOps/jenkins_compose/jenkins_configuration:/var/jenkins_home
   #     - /var/run/docker.sock:/var/run/docker.sock
 
-  ebook:
-    container_name: ebookApp
-    build: ./Ebook-project/.
-    ports:
-      - 8085:8081
+  # ebook:
+    # container_name: ebookApp
+    # build: ./Ebook-project/.
+    # ports:
+    #   - 8085:8081

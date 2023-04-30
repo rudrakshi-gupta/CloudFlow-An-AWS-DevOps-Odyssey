@@ -52,7 +52,7 @@
 				    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check">
 				    <label class="form-check-label" for="exampleCheck1">Agree Terms & Conditions</label>
 				  </div>
-				  <button type="submit" class="btn btn-primary">Submit</button>
+				  <button type="submit" class="btn btn-primary sub">Submit</button>
 				</form>
 				</div>
 			</div>

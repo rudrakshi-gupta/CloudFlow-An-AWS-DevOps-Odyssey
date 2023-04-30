@@ -7,4 +7,6 @@ public interface BookDAO {
 	
 	
 	public List<BookDtls> getAllBooks();
+
+	public BookDtls getBook ById(int id);
 }

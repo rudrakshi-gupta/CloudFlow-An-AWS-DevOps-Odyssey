@@ -38,12 +38,12 @@
                             <td><img src="../book/<%=b.getPhotoName()%>"
                                 style="width: 50px; height: 50 px"></td>
                             <td><%=b.getBookName()%></td>
-                            <td><%b.getAuthor()%></td>
-                            <td><%b.getPrice()%></td>
-                            <td><%b.getBookCategory()%></td>
-                            <td><%b.getStatus%></td>
+                            <td><%=b.getAuthor()%></td>
+                            <td><%=b.getPrice()%></td>
+                            <td><%=b.getBookCategory()%></td>
+                            <td><%=b.getStatus%></td>
                             <td>
-                                <a href="edit_books.jsp" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="edit_books.jsp?id=<%=b.getBookId()%>" class="btn btn-sm btn-primary">Edit</a>
                                 <a href="#" class="btn btn-sm btn-danger">Delete</a>
 
                             </td>

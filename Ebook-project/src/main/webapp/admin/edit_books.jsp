@@ -1,8 +1,11 @@
+<%@page import="com.entity. BookDtls"%>
+<%@page import="com.DB.DBConnect"%>
+<%@page import="com.DAO. BookDAOImpl "%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page isELIgnored="false" %>
-< !DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -19,15 +22,7 @@
 				<div class="card">
 					<div class="card-body">
 						<h4 class="text-center">Edit Books</h4>
-						<c:if test="${not empty succMsg}">
-							<p class="text-center text-success">${succMsg}</p>
-							<c:remove var="succMsg" scope="session" />
-						</c:if>
-
-						<c:if test="${not empty failedMsg}">
-							<p class="text-center text-danger">${failedMsg}</p>
-							<c:remove var="failedMsg" scope="session" />
-						</c:if>
+						
 
                         <%
 						int id=Integer.parseInt(request.getParameter("id"));
@@ -37,8 +32,8 @@
 
 
 
-						<form action="../editbooks" method="post"
-							enctype="multipart/form-data">
+						<form action="../editbooks" method="post">
+							<input type="hidden" name="id" value="<%=b.getBookId()%>">
 
 							<div class="form-group">
 								<label for="exampleInputEmail1">Book Name*</label> <input

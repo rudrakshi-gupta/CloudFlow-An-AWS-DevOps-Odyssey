@@ -15,6 +15,22 @@ public class BooksDeleteServlet extends HttpServlet{
         
         try {
             int id=Integer.parseInt(req.getParameter("id"));
+
+            BookDAOImpl dao=new BookDAOImpl(DBConnect.getConn());
+            boolean f=dao.deleteBooks(b);
+
+            HttpSession session=req.getSession();
+
+            if(f)
+            {
+                session.setAttribute("succMsg", "Book Deleted Successfully..");
+                resp.sendRedirect ("admin/all_books.jsp");
+            }else {
+                session.setAttribute("failedMsg", "Something wrong on server");
+                resp.sendRedirect ("admin/all_books.jsp");
+            }
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

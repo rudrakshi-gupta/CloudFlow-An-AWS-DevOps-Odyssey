@@ -52,20 +52,13 @@
                         %>
                         <tr>
                             <td><%=b.getBookId()%></td>
-                            <td><img src="../book/<%=b.getPhotoName()%>"
+                            <td><img src="../book/<%=b.getPhotoname()%>"
                                 style="width: 50px; height: 50 px"></td>
                             <td><%=b.getBookName()%></td>
-<<<<<<< HEAD
                             <td><%=b.getAuthor()%></td>
                             <td><%=b.getPrice()%></td>
                             <td><%=b.getBookCategory()%></td>
-                            <td><%=b.getStatus%></td>
-=======
-                            <td><%b.getAuthor()%></td>
-                            <td><%b.getPrice()%></td>
-                            <td><%b.getBookCategory()%></td>
-                            <td><%b.getStatus()%></td>
->>>>>>> 8924a61e19bf6d666a0988be834ce640e3c3b78b
+                            <td><%=b.getStatus()%></td>
                             <td>
                                 <a href="edit_books.jsp?id=<%=b.getBookId()%>" 
                                     class="btn btn-sm btn-primary">Edit</a>

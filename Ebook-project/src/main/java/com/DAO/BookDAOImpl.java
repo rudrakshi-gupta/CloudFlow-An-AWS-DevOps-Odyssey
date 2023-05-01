@@ -75,7 +75,6 @@ public class BookDAOImpl implements BookDAO{
 			e.printStackTrace();
 
 		}
-<<<<<<< HEAD
 
 		return list;
 
@@ -90,14 +89,14 @@ public class BookDAOImpl implements BookDAO{
 			ResultSet rs=ps.executeQuery();
 			while(rs.next())
 			{
-				b=new BookDtls();|
+				b=new BookDtls();
 				b.setBookId(rs.getInt(1));
 				b.setBookName (rs.getString(2));
 				b.setAuthor(rs.getString(3));
 				b.setPrice (rs.getString(4));
 				b.setBookCategory (rs.getString(5));
 				b.setStatus (rs.getString(6));
-				b.setPhotoName (rs.getString(7));
+				b.setPhotoname (rs.getString(7));
 				b.setEmail (rs.getString(8));
 			}
 
@@ -108,8 +107,8 @@ public class BookDAOImpl implements BookDAO{
     }
 
 
-	public boolean updateEdit Books (BookDtls b) {
-		boolean f-false;
+	public boolean updateEditBooks (BookDtls b) {
+		boolean f=false;
 
 		try {
 			String sql="update book_dtls set bookname=?, author=?, price=?,status=? where bookId=?";
@@ -139,15 +138,14 @@ public class BookDAOImpl implements BookDAO{
 		}
 
 		return f;
-=======
-		return null;
 
 	}
 
 	@Override
-	public List<BookDtls> getAllBooks() {
+	public boolean updateEditBooks(int id) {
 		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'getAllBooks'");
->>>>>>> 8924a61e19bf6d666a0988be834ce640e3c3b78b
+		return false;
 	}
+	
+	
 }

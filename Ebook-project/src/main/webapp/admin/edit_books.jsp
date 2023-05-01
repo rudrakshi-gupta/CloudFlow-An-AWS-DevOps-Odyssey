@@ -27,7 +27,7 @@
                         <%
 						int id=Integer.parseInt(request.getParameter("id"));
                         BookDAOImpl dao=new BookDAOImpl (DBConnect.getConn());
-                        BookDtls b-dao.getBookById(id);
+                        BookDtls b=dao.getBookById(id);
                         %>
 
 
@@ -54,17 +54,20 @@
 							<div class="form-group">
 								<label for="inputState">Book Status</label> <select
 									id="inputState" name="status" class="form-control">
-									<%
-                                    if ("Active".equals(b.getStatus())) {
-										<option value="Active">Active</option>
-                                    	<option value="Inactive">Inactive</option>
-                                    } else {
-										<option value="Active">Inactive</option>
-										<option value="Active">Active</option>
-									<%
-									}
-									%>
 									
+									<%
+                                        if ("Active".equals(b.getStatus())) {
+                                        %>
+                                        <option value="Active">Active</option> 
+                                        <option value="Inactive">Inactive</option> 
+                                        <%
+                                        } else {%>
+                                        <option value="Inactive">Inactive</option>
+                                        <option value="Active">Active</option> 
+                                        <%
+                                            }
+                                        %>
+                                        
 								</select>
 							</div>
 							<div class="form-group">

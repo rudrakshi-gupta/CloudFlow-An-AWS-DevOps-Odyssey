@@ -2,8 +2,8 @@ FROM openjdk:19-jdk-alpine3.16
 
 WORKDIR C:\Users\shamb\Desktop\Roo\code\projects\docker_project\project1\selenium-search-testing
 
-COPY target/Selenium-Testing-0.0.1-SNAPSHOT.jar selenium-search-testing-0.0.1-SNAPSHOT.jar
-COPY target/Selenium-Testing-0.0.1-SNAPSHOT-tests.jar selenium-search-testing-0.0.1-SNAPSHOT-tests.jar
+COPY target/Selenium-Testing-0.0.1-SNAPSHOT.jar selenium-testing-0.0.1-SNAPSHOT.jar
+COPY target/Selenium-Testing-0.0.1-SNAPSHOT-tests.jar selenium-testing-0.0.1-SNAPSHOT-tests.jar
 COPY target/libs libs
 COPY testng.xml testng.xml
 

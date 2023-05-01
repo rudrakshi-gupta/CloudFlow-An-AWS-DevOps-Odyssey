@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import PageObjects.AdminPage;
 
-public class AdminOrdersDetail extends BaseTest{
+public class AdminOrdersDetailTest extends BaseTest{
 	@Test
 	public void userTest() {
 		AdminPage c = new AdminPage(driver);

@@ -37,7 +37,7 @@ public class EditBooksServlet extends HttpServlet {
 
             if(f)
             {
-                session.setAttribute("succMsg", "Book Update Successfully..");
+                session.setAttribute("succMsg", "Book Updated Successfully..");
                 resp.sendRedirect ("admin/all_books.jsp");
             }else {
                 session.setAttribute("failedMsg", "Something wrong on server");

@@ -151,3 +151,35 @@ public class BookDAOImpl implements BookDAO{
 >>>>>>> 8924a61e19bf6d666a0988be834ce640e3c3b78b
 	}
 }
+
+@Override
+    public List<Books> getNewBooks() {
+        List<Books> list = new ArrayList<>();
+        Books b = null;
+        try {
+            String query = "select * from books  where bookCategory = ? and status=? order by id DESC";
+            PreparedStatement ps = con.prepareStatement(query);
+
+            ps.setString(1, "New");
+            ps.setString(2, "Active");
+            ResultSet set = ps.executeQuery();
+            Integer i = 1;
+            while (set.next() && i <= 4) {
+                b = new Books();
+                b.setBookId(set.getInt("id"));
+                b.setAuthor(set.getString("author"));
+                b.setBookCategory(set.getString("bookCategory"));
+                b.setBookName(set.getString("bName"));
+                b.setEmail(set.getString("email"));
+                b.setPhotoName(set.getString("photo"));
+                b.setPrice(set.getString("price"));
+                b.setStatus(set.getString("status"));
+                list.add(b);
+                i++;
+            }
+        } catch (Exception e) {
+            System.out.println("Error : " + e.getMessage());
+            e.printStackTrace();
+        }
+        return list;
+    }

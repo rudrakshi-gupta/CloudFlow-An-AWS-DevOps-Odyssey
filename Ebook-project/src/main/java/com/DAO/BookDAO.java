@@ -6,7 +6,6 @@ import com.entity.BookDtls;
 
 public interface BookDAO {
 	public boolean addBooks(BookDtls b);
-	
 	public List<BookDtls> getAllBooks();
 
 	public BookDtls getBookById(int id);
@@ -14,4 +13,10 @@ public interface BookDAO {
 	public boolean updateEditBooks(int id);
 
 	public boolean deleteBooks(int id);
+
+	public List<BookDtls> getNewBook();
+
+	public List<BookDtls> getRecentBook();
+
+	public List<BookDtls> getOldBooks();
 }

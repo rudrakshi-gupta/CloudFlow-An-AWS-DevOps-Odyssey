@@ -1,13 +1,19 @@
 package com.admin.servlet;
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.entity.BookDtls;
+import com.DAO.BookDAOImpl;
+import com.DB.DBConnect;
 
 @WebServlet("/editbooks")
-public class EditBooks Servlet extends HttpServlet {
+public class EditBooksServlet extends HttpServlet {
     @Override
     protected void doPost (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
@@ -24,8 +30,8 @@ public class EditBooks Servlet extends HttpServlet {
             b.setPrice (price);
             b.setStatus (status);
 
-            BookDAOImp1 dao=new BookDAOImpl(DBConnect.getConn());
-            boolean f-dao.updateEdit Books (b);
+            BookDAOImpl dao=new BookDAOImpl(DBConnect.getConn());
+            boolean f=dao.updateEditBooks(b);
 
             HttpSession session=req.getSession();
 

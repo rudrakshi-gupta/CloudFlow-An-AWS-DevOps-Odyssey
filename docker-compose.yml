@@ -13,13 +13,13 @@ services:
     volumes:
       - ./db-dump:/docker-entrypoint-initdb.d
 
-  # selenium-chrome-standalone:
-  #   image: selenium/standalone-chrome:latest
-  #   shm_size: 2gb
-  #   container_name: selenium-chrome-standalone
-  #   ports:
-  #     - "4444:4444"
-  #     - "7900:7900"
+  selenium-chrome-standalone:
+    image: selenium/standalone-chrome:latest
+    shm_size: 2gb
+    container_name: selenium-chrome-standalone
+    ports:
+      - "4444:4444"
+      - "7900:7900"
       
   # jenkins:
   #   image: jenkins/jenkins:lts

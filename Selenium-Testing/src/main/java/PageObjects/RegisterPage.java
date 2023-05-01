@@ -59,12 +59,12 @@ public class RegisterPage {
 	private WebElement Submit;
 	
 	public void launchURL() {
-		String ip = "103.93.114.195" ;
+		String ip = "192.168.16.1" ;
 		if(System.getProperty("IP") !=null) {
 			ip = System.getProperty("IP");
 		}
-		this.driver.get("http://"+ip+":8080/Ebook-project/register.jsp");
-//		this.driver.get("https://www.google.com/");
+		this.driver.get("http://"+ip+":9090/Ebook-project/register.jsp");
+//		this.driver.get("http://192.168.16.1:9090/Ebook-project/register.jsp");
 	}
 	public boolean isDisplayed() {
 		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(Name));

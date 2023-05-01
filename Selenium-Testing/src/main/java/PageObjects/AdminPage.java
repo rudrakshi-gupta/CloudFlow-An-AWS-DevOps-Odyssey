@@ -35,12 +35,13 @@ public class AdminPage {
 	private WebElement Order;
 	
 	public void launchURL() {
-		String ip = "103.93.114.195" ;//apache server ip
+		String ip = "192.168.16.1" ;//apache server ip
 		if(System.getProperty("IP") !=null) {
 			ip = System.getProperty("IP");
 		}
-		this.driver.get("http://"+ip+":8080/Ebook-project/admin/home.jsp");
-//		this.driver.get("https://www.google.com/");
+		this.driver.get("http://"+ip+":9090/Ebook-project/admin/home.jsp");
+
+//		this.driver.get("http://192.168.16.1:9090/Ebook-project/admin/home.jsp");
 	}
 	public boolean isDisplayed() {
 		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(Add));

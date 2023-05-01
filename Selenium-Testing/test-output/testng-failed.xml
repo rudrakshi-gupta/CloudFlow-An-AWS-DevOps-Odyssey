@@ -1,17 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [SeleniumTests]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="UserTesting(failed)">
+  <test thread-count="5" name="HomeDTesting(failed)">
     <classes>
-      <class name="EbookTest.UserResultTest">
+      <class name="EbookTest.HomeDetailTest">
         <methods>
           <include name="quitDriver"/>
           <include name="setUpDriver"/>
-          <include name="userTest"/>
+          <include name="detailTest"/>
         </methods>
-      </class> <!-- EbookTest.UserResultTest -->
+      </class> <!-- EbookTest.HomeDetailTest -->
     </classes>
-  </test> <!-- UserTesting(failed) -->
+  </test> <!-- HomeDTesting(failed) -->
+  <test thread-count="5" name="HomeCTesting(failed)">
+    <classes>
+      <class name="EbookTest.HomeCartTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="setUpDriver"/>
+          <include name="cartTest"/>
+        </methods>
+      </class> <!-- EbookTest.HomeCartTest -->
+    </classes>
+  </test> <!-- HomeCTesting(failed) -->
+  <test thread-count="5" name="RegisterTesting(failed)">
+    <classes>
+      <class name="EbookTest.RegisterTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="registerTest"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- EbookTest.RegisterTest -->
+    </classes>
+  </test> <!-- RegisterTesting(failed) -->
+  <test thread-count="5" name="LoginUserTesting(failed)">
+    <classes>
+      <class name="EbookTest.LoginUserTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setUpDriver"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- EbookTest.LoginUserTest -->
+    </classes>
+  </test> <!-- LoginUserTesting(failed) -->
   <test thread-count="5" name="LoginAdminTesting(failed)">
     <classes>
       <class name="EbookTest.LoginAdminTest">
@@ -23,4 +56,15 @@
       </class> <!-- EbookTest.LoginAdminTest -->
     </classes>
   </test> <!-- LoginAdminTesting(failed) -->
+  <test thread-count="5" name="OrderDtlTesting(failed)">
+    <classes>
+      <class name="EbookTest.AdminOrdersDetailTest">
+        <methods>
+          <include name="setUpDriver"/>
+          <include name="quitDriver"/>
+          <include name="userTest"/>
+        </methods>
+      </class> <!-- EbookTest.AdminOrdersDetailTest -->
+    </classes>
+  </test> <!-- OrderDtlTesting(failed) -->
 </suite> <!-- Failed suite [SeleniumTests] -->

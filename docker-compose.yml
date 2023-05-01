@@ -12,6 +12,14 @@ services:
       - 3307:3306
     volumes:
       - ./db-dump:/docker-entrypoint-initdb.d
+
+  # selenium-chrome-standalone:
+  #   image: selenium/standalone-chrome:latest
+  #   shm_size: 2gb
+  #   container_name: selenium-chrome-standalone
+  #   ports:
+  #     - "4444:4444"
+  #     - "7900:7900"
       
   # jenkins:
   #   image: jenkins/jenkins:lts
@@ -26,7 +34,28 @@ services:
   #     - /var/run/docker.sock:/var/run/docker.sock
 
   # ebook:
-    # container_name: ebookApp
-    # build: ./Ebook-project/.
-    # ports:
-    #   - 8085:8081
+  #   container_name: ebookApp
+  #   image: tomcat:8.5-alpine
+  #   depends_on:
+  #     - DB
+  #   build: ./Ebook-project/.
+  #   ports:
+  #     - 8085:8080
+  #   environment:
+  #     DB_HOST: DB
+  #     DB_PORT: 3306
+  #     DB_NAME: ebook_mems
+  #     DB_USER: root
+  #     DB_PASS: root
+  #   external_links:
+  #     - DB
+
+  # phpmyadmin:
+  #   depends_on:
+  #     - DB
+  #   image: phpmyadmin/phpmyadmin
+  #   ports:
+  #     - '8081:80'
+  #   environment:
+  #     PMA_HOST: DB
+  #     MYSQL_ROOT_PASSWORD: root

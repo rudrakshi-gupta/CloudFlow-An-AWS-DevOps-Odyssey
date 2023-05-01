@@ -6,6 +6,10 @@ import javax.servlet. annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.DAO.*;
+import com.DB.*;
 
 @WebServlet("/delete")
 public class BooksDeleteServlet extends HttpServlet{
@@ -17,7 +21,7 @@ public class BooksDeleteServlet extends HttpServlet{
             int id=Integer.parseInt(req.getParameter("id"));
 
             BookDAOImpl dao=new BookDAOImpl(DBConnect.getConn());
-            boolean f=dao.deleteBooks(b);
+            boolean f=dao.deleteBooks(id);
 
             HttpSession session=req.getSession();
 

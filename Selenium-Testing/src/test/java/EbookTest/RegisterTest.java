@@ -12,9 +12,9 @@ public class RegisterTest extends BaseTest{
 		c.launchURL();
 		c.isDisplayed();
 		c.NameText("Fiona");
-		c.EmailText("fiona@reddifmail.com");
+		c.EmailText("harpreet@gmail.com");
 		c.PhnoText("3849823423");
-		c.PwdText("iamFiona");
+		c.PwdText("happy");
 		c.Checkbox();
 		c.Sub();
 		

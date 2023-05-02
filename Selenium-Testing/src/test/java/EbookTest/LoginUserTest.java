@@ -11,8 +11,8 @@ public class LoginUserTest extends BaseTest{
 		LoginPage c = new LoginPage(driver);
 		c.launchURL();
 		c.isDisplayed();
-		c.EmailText("fiona@reddifmail.com");
-		c.PwdText("iamFiona");
+		c.EmailText("harpreet@gmail.com");
+		c.PwdText("happy");
 		c.Sub();
 		
 		try {

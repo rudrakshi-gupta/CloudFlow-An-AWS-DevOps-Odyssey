@@ -30,13 +30,13 @@ public class HomePage {
 	private WebElement Cart;
 	
 	public void launchURL() {
-		String ip = "192.168.16.1" ;
-		if(System.getProperty("IP") !=null) {
-			ip = System.getProperty("IP");
-		}
-		this.driver.get("http://"+ip+":9090/Ebook-project/");
+//		String ip = "192.168.16.1" ;
+//		if(System.getProperty("IP") !=null) {
+//			ip = System.getProperty("IP");
+//		}
+//		this.driver.get("http://"+ip+":9090/Ebook-project/");
 		
-//		this.driver.get("http://192.168.16.1:9090/Ebook-project/");
+		this.driver.get("http://192.168.43.163:9090/Ebook-project/");
 	}
 	public boolean isDisplayed() {
 		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(DetailBox));

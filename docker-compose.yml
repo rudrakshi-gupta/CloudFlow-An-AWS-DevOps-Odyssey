@@ -20,6 +20,19 @@ services:
     ports:
       - "4444:4444"
       - "7900:7900"
+
+  # selenium-test:
+  #   build: ./Selenium-Testing/.
+  #   image: openjdk:19-jdk-alpine3.16
+  #   depends_on:
+  #     - selenium-chrome-standalone
+  #     - DB
+  #   container_name: test-selenium
+  #   environment:
+  #     - HUB_HOST=selenium-chrome-standalone
+  #     - BROWSER=chrome
+  #     - IP=192.168.16.1
+  #     - MODULE=testng.xml
       
   # jenkins:
   #   image: jenkins/jenkins:lts

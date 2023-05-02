@@ -5,6 +5,6 @@ WORKDIR .\DevOps\Selenium-Testing
 COPY Selenium-Testing\target\Selenium-Testing-0.0.1-SNAPSHOT.jar selenium-testing-0.0.1-SNAPSHOT.jar
 COPY Selenium-Testing\target\Selenium-Testing-0.0.1-SNAPSHOT-tests.jar selenium-testing-0.0.1-SNAPSHOT-tests.jar
 COPY Selenium-Testing\target\libs libs
-COPY Selenium-Testing\testng.xml testng.xml
+COPY testng.xml testng.xml
 
 ENTRYPOINT java -cp Selenium-Testing\Selenium-Testing-0.0.1-SNAPSHOT.jar:Selenium-Testing-0.0.1-SNAPSHOT-tests.jar:libs/* -DIP=$IP -DBROWSER=$BROWSER -DHUB_HOST=$HUB_HOST org.testng.TestNG $MODULE

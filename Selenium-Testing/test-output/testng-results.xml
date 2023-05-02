@@ -1,101 +1,467 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-02T07:11:44 IST" name="SeleniumTests" finished-at="2023-05-02T07:12:20 IST" duration-ms="36269">
+  <suite started-at="2023-05-02T07:18:54 IST" name="SeleniumTests" finished-at="2023-05-02T07:19:23 IST" duration-ms="28491">
     <groups>
     </groups>
-    <test started-at="2023-05-02T07:11:44 IST" name="HomeDTesting" finished-at="2023-05-02T07:11:50 IST" duration-ms="5990">
+    <test started-at="2023-05-02T07:18:54 IST" name="HomeDTesting" finished-at="2023-05-02T07:18:59 IST" duration-ms="5173">
       <class name="EbookTest.HomeDetailTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.HomeDetailTest@52e677af]" started-at="2023-05-02T07:11:44 IST" name="setUpDriver" finished-at="2023-05-02T07:11:45 IST" duration-ms="766" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.HomeDetailTest@52e677af]" started-at="2023-05-02T07:18:54 IST" name="setUpDriver" finished-at="2023-05-02T07:18:55 IST" duration-ms="774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="detailTest()[pri:0, instance:EbookTest.HomeDetailTest@52e677af]" started-at="2023-05-02T07:11:45 IST" name="detailTest" finished-at="2023-05-02T07:11:50 IST" duration-ms="5101" status="PASS">
+        <test-method signature="detailTest()[pri:0, instance:EbookTest.HomeDetailTest@52e677af]" started-at="2023-05-02T07:18:55 IST" name="detailTest" finished-at="2023-05-02T07:18:59 IST" duration-ms="4194" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.C4fdyX}, goog:chromeOptions: {debuggerAddress: localhost:46099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aa796a3243bfebd8b048acc173c8c43c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.C4fdyX}, goog:chromeOptions: {debuggerAddress: localhost:46099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aa796a3243bfebd8b048acc173c8c43c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at PageObjects.HomePage.launchURL(HomePage.java:39)
+at EbookTest.HomeDetailTest.detailTest(HomeDetailTest.java:12)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.TestNG.privateMain(TestNG.java:1414)
+at org.testng.TestNG.main(TestNG.java:1378)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- detailTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.HomeDetailTest@52e677af]" started-at="2023-05-02T07:11:50 IST" name="quitDriver" finished-at="2023-05-02T07:11:50 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.HomeDetailTest@52e677af]" started-at="2023-05-02T07:18:59 IST" name="quitDriver" finished-at="2023-05-02T07:18:59 IST" duration-ms="164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- EbookTest.HomeDetailTest -->
     </test> <!-- HomeDTesting -->
-    <test started-at="2023-05-02T07:11:50 IST" name="HomeCTesting" finished-at="2023-05-02T07:11:55 IST" duration-ms="5447">
+    <test started-at="2023-05-02T07:19:00 IST" name="HomeCTesting" finished-at="2023-05-02T07:19:04 IST" duration-ms="4661">
       <class name="EbookTest.HomeCartTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.HomeCartTest@f2f2cc1]" started-at="2023-05-02T07:11:50 IST" name="setUpDriver" finished-at="2023-05-02T07:11:50 IST" duration-ms="385" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.HomeCartTest@f2f2cc1]" started-at="2023-05-02T07:19:00 IST" name="setUpDriver" finished-at="2023-05-02T07:19:00 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="cartTest()[pri:0, instance:EbookTest.HomeCartTest@f2f2cc1]" started-at="2023-05-02T07:11:50 IST" name="cartTest" finished-at="2023-05-02T07:11:55 IST" duration-ms="4967" status="PASS">
+        <test-method signature="cartTest()[pri:0, instance:EbookTest.HomeCartTest@f2f2cc1]" started-at="2023-05-02T07:19:00 IST" name="cartTest" finished-at="2023-05-02T07:19:04 IST" duration-ms="4163" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.fX1Wf3}, goog:chromeOptions: {debuggerAddress: localhost:38275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 333e256d46b8c53499e04b1712ca3d73]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.fX1Wf3}, goog:chromeOptions: {debuggerAddress: localhost:38275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 333e256d46b8c53499e04b1712ca3d73
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at PageObjects.HomePage.launchURL(HomePage.java:39)
+at EbookTest.HomeCartTest.cartTest(HomeCartTest.java:12)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.TestNG.privateMain(TestNG.java:1414)
+at org.testng.TestNG.main(TestNG.java:1378)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.HomeCartTest@f2f2cc1]" started-at="2023-05-02T07:11:55 IST" name="quitDriver" finished-at="2023-05-02T07:11:55 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.HomeCartTest@f2f2cc1]" started-at="2023-05-02T07:19:04 IST" name="quitDriver" finished-at="2023-05-02T07:19:04 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- EbookTest.HomeCartTest -->
     </test> <!-- HomeCTesting -->
-    <test started-at="2023-05-02T07:11:55 IST" name="RegisterTesting" finished-at="2023-05-02T07:12:01 IST" duration-ms="5909">
+    <test started-at="2023-05-02T07:19:04 IST" name="RegisterTesting" finished-at="2023-05-02T07:19:09 IST" duration-ms="4650">
       <class name="EbookTest.RegisterTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.RegisterTest@5ad851c9]" started-at="2023-05-02T07:11:55 IST" name="setUpDriver" finished-at="2023-05-02T07:11:56 IST" duration-ms="384" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.RegisterTest@5ad851c9]" started-at="2023-05-02T07:19:04 IST" name="setUpDriver" finished-at="2023-05-02T07:19:05 IST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="registerTest()[pri:0, instance:EbookTest.RegisterTest@5ad851c9]" started-at="2023-05-02T07:11:56 IST" name="registerTest" finished-at="2023-05-02T07:12:01 IST" duration-ms="5392" status="PASS">
+        <test-method signature="registerTest()[pri:0, instance:EbookTest.RegisterTest@5ad851c9]" started-at="2023-05-02T07:19:05 IST" name="registerTest" finished-at="2023-05-02T07:19:09 IST" duration-ms="4176" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.sTfRzD}, goog:chromeOptions: {debuggerAddress: localhost:42959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8547f1805102361e62941fdd07485a8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.sTfRzD}, goog:chromeOptions: {debuggerAddress: localhost:42959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8547f1805102361e62941fdd07485a8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at PageObjects.RegisterPage.launchURL(RegisterPage.java:67)
+at EbookTest.RegisterTest.registerTest(RegisterTest.java:12)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.TestNG.privateMain(TestNG.java:1414)
+at org.testng.TestNG.main(TestNG.java:1378)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.RegisterTest@5ad851c9]" started-at="2023-05-02T07:12:01 IST" name="quitDriver" finished-at="2023-05-02T07:12:01 IST" duration-ms="131" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.RegisterTest@5ad851c9]" started-at="2023-05-02T07:19:09 IST" name="quitDriver" finished-at="2023-05-02T07:19:09 IST" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- EbookTest.RegisterTest -->
     </test> <!-- RegisterTesting -->
-    <test started-at="2023-05-02T07:12:01 IST" name="LoginUserTesting" finished-at="2023-05-02T07:12:08 IST" duration-ms="6600">
+    <test started-at="2023-05-02T07:19:09 IST" name="LoginUserTesting" finished-at="2023-05-02T07:19:14 IST" duration-ms="4689">
       <class name="EbookTest.LoginUserTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.LoginUserTest@37e547da]" started-at="2023-05-02T07:12:01 IST" name="setUpDriver" finished-at="2023-05-02T07:12:02 IST" duration-ms="387" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.LoginUserTest@37e547da]" started-at="2023-05-02T07:19:09 IST" name="setUpDriver" finished-at="2023-05-02T07:19:09 IST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="loginTest()[pri:0, instance:EbookTest.LoginUserTest@37e547da]" started-at="2023-05-02T07:12:02 IST" name="loginTest" finished-at="2023-05-02T07:12:08 IST" duration-ms="6129" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:EbookTest.LoginUserTest@37e547da]" started-at="2023-05-02T07:19:09 IST" name="loginTest" finished-at="2023-05-02T07:19:13 IST" duration-ms="4159" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.ceAgov}, goog:chromeOptions: {debuggerAddress: localhost:41499}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 46d24ddce76edaa6739d1bb71af24c55]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.ceAgov}, goog:chromeOptions: {debuggerAddress: localhost:41499}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 46d24ddce76edaa6739d1bb71af24c55
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at PageObjects.LoginPage.launchURL(LoginPage.java:48)
+at EbookTest.LoginUserTest.loginTest(LoginUserTest.java:12)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.TestNG.privateMain(TestNG.java:1414)
+at org.testng.TestNG.main(TestNG.java:1378)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.LoginUserTest@37e547da]" started-at="2023-05-02T07:12:08 IST" name="quitDriver" finished-at="2023-05-02T07:12:08 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.LoginUserTest@37e547da]" started-at="2023-05-02T07:19:13 IST" name="quitDriver" finished-at="2023-05-02T07:19:14 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- EbookTest.LoginUserTest -->
     </test> <!-- LoginUserTesting -->
-    <test started-at="2023-05-02T07:12:08 IST" name="LoginAdminTesting" finished-at="2023-05-02T07:12:13 IST" duration-ms="5440">
+    <test started-at="2023-05-02T07:19:14 IST" name="LoginAdminTesting" finished-at="2023-05-02T07:19:18 IST" duration-ms="4641">
       <class name="EbookTest.LoginAdminTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.LoginAdminTest@6ab7a896]" started-at="2023-05-02T07:12:08 IST" name="setUpDriver" finished-at="2023-05-02T07:12:08 IST" duration-ms="321" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.LoginAdminTest@6ab7a896]" started-at="2023-05-02T07:19:14 IST" name="setUpDriver" finished-at="2023-05-02T07:19:14 IST" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="adminlogTest()[pri:0, instance:EbookTest.LoginAdminTest@6ab7a896]" started-at="2023-05-02T07:12:08 IST" name="adminlogTest" finished-at="2023-05-02T07:12:13 IST" duration-ms="5014" status="PASS">
+        <test-method signature="adminlogTest()[pri:0, instance:EbookTest.LoginAdminTest@6ab7a896]" started-at="2023-05-02T07:19:14 IST" name="adminlogTest" finished-at="2023-05-02T07:19:18 IST" duration-ms="4159" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.nifmCv}, goog:chromeOptions: {debuggerAddress: localhost:38395}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd62e6454ea38059bea6f89b61e1162e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.nifmCv}, goog:chromeOptions: {debuggerAddress: localhost:38395}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd62e6454ea38059bea6f89b61e1162e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at PageObjects.LoginPage.launchURL(LoginPage.java:48)
+at EbookTest.LoginAdminTest.adminlogTest(LoginAdminTest.java:12)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.TestNG.privateMain(TestNG.java:1414)
+at org.testng.TestNG.main(TestNG.java:1378)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminlogTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.LoginAdminTest@6ab7a896]" started-at="2023-05-02T07:12:13 IST" name="quitDriver" finished-at="2023-05-02T07:12:13 IST" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.LoginAdminTest@6ab7a896]" started-at="2023-05-02T07:19:18 IST" name="quitDriver" finished-at="2023-05-02T07:19:18 IST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- EbookTest.LoginAdminTest -->
     </test> <!-- LoginAdminTesting -->
-    <test started-at="2023-05-02T07:12:13 IST" name="OrderDtlTesting" finished-at="2023-05-02T07:12:20 IST" duration-ms="6836">
+    <test started-at="2023-05-02T07:19:18 IST" name="OrderDtlTesting" finished-at="2023-05-02T07:19:23 IST" duration-ms="4608">
       <class name="EbookTest.AdminOrdersDetailTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.AdminOrdersDetailTest@71c8becc]" started-at="2023-05-02T07:12:13 IST" name="setUpDriver" finished-at="2023-05-02T07:12:14 IST" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:EbookTest.AdminOrdersDetailTest@71c8becc]" started-at="2023-05-02T07:19:18 IST" name="setUpDriver" finished-at="2023-05-02T07:19:19 IST" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="userTest()[pri:0, instance:EbookTest.AdminOrdersDetailTest@71c8becc]" started-at="2023-05-02T07:12:14 IST" name="userTest" finished-at="2023-05-02T07:12:20 IST" duration-ms="6306" status="PASS">
+        <test-method signature="userTest()[pri:0, instance:EbookTest.AdminOrdersDetailTest@71c8becc]" started-at="2023-05-02T07:19:19 IST" name="userTest" finished-at="2023-05-02T07:19:23 IST" duration-ms="4150" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.dQJYTw}, goog:chromeOptions: {debuggerAddress: localhost:41483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c4847e14b1fe7e5e3cbd65b11da7c8b7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6CKLBB2R', ip: '192.168.16.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.dQJYTw}, goog:chromeOptions: {debuggerAddress: localhost:41483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.32.3:4444/sess..., se:cdpVersion: 107.0.5304.87, se:vnc: ws://192.168.32.3:4444/sess..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.32.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c4847e14b1fe7e5e3cbd65b11da7c8b7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at PageObjects.LoginPage.launchURL(LoginPage.java:48)
+at EbookTest.AdminOrdersDetailTest.userTest(AdminOrdersDetailTest.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.TestNG.privateMain(TestNG.java:1414)
+at org.testng.TestNG.main(TestNG.java:1378)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.AdminOrdersDetailTest@71c8becc]" started-at="2023-05-02T07:12:20 IST" name="quitDriver" finished-at="2023-05-02T07:12:20 IST" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:EbookTest.AdminOrdersDetailTest@71c8becc]" started-at="2023-05-02T07:19:23 IST" name="quitDriver" finished-at="2023-05-02T07:19:23 IST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

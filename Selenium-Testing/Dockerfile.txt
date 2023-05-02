@@ -1,10 +1,10 @@
 FROM openjdk:19-jdk-alpine3.16
 
-WORKDIR .\DevOps\Selenium-Testing
+# WORKDIR .\DevOps\Selenium-Testing
 
-COPY C:\Users\shamb\.jenkins\workspace\selenium-test\Selenium-Testing\target\Selenium-Testing-0.0.1-SNAPSHOT.jar selenium-testing-0.0.1-SNAPSHOT.jar
-COPY C:\Users\shamb\.jenkins\workspace\selenium-test\Selenium-Testing\target\Selenium-Testing-0.0.1-SNAPSHOT-tests.jar selenium-testing-0.0.1-SNAPSHOT-tests.jar
-COPY C:\Users\shamb\.jenkins\workspace\selenium-test\Selenium-Testing\target\libs libs
-COPY C:\Users\shamb\.jenkins\workspace\selenium-test\Selenium-Testing\testng.xml testng.xml
+COPY Selenium-Testing\target\Selenium-Testing-0.0.1-SNAPSHOT.jar selenium-testing-0.0.1-SNAPSHOT.jar
+COPY Selenium-Testing\target\Selenium-Testing-0.0.1-SNAPSHOT-tests.jar selenium-testing-0.0.1-SNAPSHOT-tests.jar
+COPY Selenium-Testing\target\libs libs
+COPY Selenium-Testing\testng.xml testng.xml
 
 ENTRYPOINT java -cp Selenium-Testing\Selenium-Testing-0.0.1-SNAPSHOT.jar:Selenium-Testing-0.0.1-SNAPSHOT-tests.jar:libs/* -DIP=$IP -DBROWSER=$BROWSER -DHUB_HOST=$HUB_HOST org.testng.TestNG $MODULE

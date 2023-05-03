@@ -45,7 +45,7 @@ public class LoginPage {
 //			ip = System.getProperty("IP");
 //		}
 //		this.driver.get("http://"+ip+":9090/Ebook-project/login.jsp");
-		this.driver.get("http://192.168.96.1:9090/Ebook-project/login.jsp");
+		this.driver.get("http://192.168.43.163:9090/Ebook-project/login.jsp");
 	}
 	public boolean isDisplayed() {
 		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(Email));

@@ -64,7 +64,7 @@ public class RegisterPage {
 //			ip = System.getProperty("IP");
 //		}
 //		this.driver.get("http://"+ip+":9090/Ebook-project/register.jsp");
-		this.driver.get("http://192.168.149.1:9090/Ebook-project/register.jsp");
+		this.driver.get("http://65.1.109.153:9090/Ebook-project/register.jsp");
 	}
 	public boolean isDisplayed() {
 		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(Name));

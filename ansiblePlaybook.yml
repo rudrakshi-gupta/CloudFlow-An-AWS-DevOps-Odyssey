@@ -52,12 +52,14 @@
     - name: Launch the new EC2 Instance
       local_action: ec2 group={{ security_group }} instance_type={{ instance_type}}
         image={{ image }} wait=true region={{ region }} keypair={{ keypair }}
-        count={{count}}
-      metadata_options: {http_endpoint: enabled, http_tokens: required}
-      register: ec2
+        count={{count}} 
+      metadata_options:
+      http_endpoint: enabled
+      http_tokens: required
     - name: Task
       local_action: ec2_tag resource={{ item.id }} region={{ region }} state=present
       with_items: "{{ ec2.instances }}"
+      register: ec2
       args:
         tags:
           Name: MyTargetEc2Instance

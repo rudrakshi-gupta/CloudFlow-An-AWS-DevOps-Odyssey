@@ -8,7 +8,7 @@
    vars:
      keypair: devops
      instance_type: t2.micro
-     image: ami-02eb7a4783e7e9317
+     image: ami-0b08bfc6ff7069aff
      wait: yes
      group: webserver
      count: 1

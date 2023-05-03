@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   DB:
-    container_name: db
+    container_name: DB
     image: mysql:latest
     build: ./db-dump/.
     command: --default-authentication-plugin=mysql_native_password
@@ -12,15 +12,63 @@ services:
       - 3307:3306
     volumes:
       - ./db-dump:/docker-entrypoint-initdb.d
-      
-  jenkins:
-    image: jenkins/jenkins:lts
-    privileged: true
-    user: root
+
+  selenium-chrome-standalone:
+    image: selenium/standalone-chrome:latest
+    shm_size: 2gb
+    container_name: selenium-chrome-standalone
     ports:
-     - 8080:8080
-     - 50000:50000
-    container_name: jenkins
-    volumes:
-      - /home/$DevOps/jenkins_compose/jenkins_configuration:/var/jenkins_home
-      - /var/run/docker.sock:/var/run/docker.sock
+      - "4444:4444"
+      - "7900:7900"
+
+  # selenium-test:
+  #   build: ./Selenium-Testing/.
+  #   image: openjdk:19-jdk-alpine3.16
+  #   depends_on:
+  #     - selenium-chrome-standalone
+  #     - DB
+  #   container_name: test-selenium
+  #   environment:
+  #     - HUB_HOST=selenium-chrome-standalone
+  #     - BROWSER=chrome
+  #     - IP=192.168.16.1
+  #     - MODULE=testng.xml
+      
+  # jenkins:
+  #   image: jenkins/jenkins:lts
+  #   privileged: true
+  #   user: root
+  #   ports:
+  #    - 8080:8080
+  #    - 50000:50000
+  #   container_name: jenkins
+  #   volumes:
+  #     - /home/$DevOps/jenkins_compose/jenkins_configuration:/var/jenkins_home
+  #     - /var/run/docker.sock:/var/run/docker.sock
+
+  # ebook:
+  #   container_name: ebookApp
+  #   image: tomcat:8.5-alpine
+  #   depends_on:
+  #     - DB
+  #   build: ./Ebook-project/.
+  #   ports:
+  #     - 8085:8080
+  #   environment:
+  #     DB_HOST: DB
+  #     DB_PORT: 3306
+  #     DB_NAME: ebook_mems
+  #     DB_USER: root
+  #     DB_PASS: root
+  #   external_links:
+  #     - DB
+
+  # phpmyadmin:
+  #   depends_on:
+  #     - DB
+  #   image: phpmyadmin/phpmyadmin
+  #   ports:
+  #     - '8081:80'
+  #   environment:
+  #     PMA_HOST: DB
+  #     MYSQL_ROOT_PASSWORD: root

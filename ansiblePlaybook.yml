@@ -56,6 +56,9 @@
         wait: yes
         instance_tags:
           Name: my-ec2-instance
+        metadata_options:
+          http_endpoint: enabled
+          http_tokens: required
       register: ec2_instance
 
     - name: Print instance details

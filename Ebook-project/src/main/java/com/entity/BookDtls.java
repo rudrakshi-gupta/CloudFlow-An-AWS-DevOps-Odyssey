@@ -74,7 +74,7 @@ public class BookDtls {
 	}
 	@Override
 	public String toString() {
-		return "BookDetails [bookId=" + bookId + ", bookName=" + bookName + ", author=" + author + ", price=" + price
+		return "BookDetails [bookId=" + bookId + ", BookName=" + bookName + ", author=" + author + ", price=" + price
 				+ ", bookCategory=" + bookCategory + ", status=" + status + ", photoname=" + photoname + ", email="
 				+ email + "]";
 	}

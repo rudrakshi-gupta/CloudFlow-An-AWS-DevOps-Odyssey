@@ -25,7 +25,7 @@
 <body style="background-color: #f7f7f7;">
     <%@ include file="all_component/navbar.jsp" %>
         <div class="container-fluid back-img">
-            <h2 class="text-center text-danger">EBook Management System</h2>
+            <h2 class="text-center text-danger">05EBook Management System</h2>
         </div>
         
     <%Connection conn = DBConnect.getConn();

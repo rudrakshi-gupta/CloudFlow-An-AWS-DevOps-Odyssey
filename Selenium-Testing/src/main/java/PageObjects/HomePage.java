@@ -36,7 +36,7 @@ public class HomePage {
 //		}
 //		this.driver.get("http://"+ip+":9090/Ebook-project/");
 		
-		this.driver.get("http://192.168.96.1:9090/Ebook-project/");
+		this.driver.get("http://65.1.109.153:9090/Ebook-project/");
 	}
 	public boolean isDisplayed() {
 		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(DetailBox));

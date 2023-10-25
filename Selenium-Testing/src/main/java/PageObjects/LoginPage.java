@@ -40,12 +40,12 @@ public class LoginPage {
 	private WebElement Submit;
 	
 	public void launchURL() {
-//		String ip = "192.168.16.1" ;//apache server ip
-//		if(System.getProperty("IP") !=null) {
-//			ip = System.getProperty("IP");
-//		}
-//		this.driver.get("http://"+ip+":9090/Ebook-project/login.jsp");
-		this.driver.get("http://65.1.109.153:9090/Ebook-project/login.jsp");
+		String ip = "192.168.16.1" ;//apache server ip
+		if(System.getProperty("IP") !=null) {
+			ip = System.getProperty("IP");
+		}
+		this.driver.get("http://"+ip+":9090/Ebook-project/login.jsp");
+//		this.driver.get("http://65.1.109.153:9090/Ebook-project/login.jsp");
 	}
 	public boolean isDisplayed() {
 		((FluentWait<WebDriver>) this.wait).until(ExpectedConditions.visibilityOf(Email));
